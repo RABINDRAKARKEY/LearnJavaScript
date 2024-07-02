@@ -305,26 +305,93 @@
 
 
 // status
-let status = 500;
-switch (status) {
-    case 200:
-        console.log("OK");
-        break;
-    case 201:
-        console.log("Created");
-        break;
-    case 400:
-        console.log("rejected");
-        break;
-    case 403:
-        console.log("Forbidden");
-        break;
-    case 401:
-        console.log("UnAuthorized");
-        break;
-    case 500:
-        console.log("Internal server ERROR");
-        break;
-    default:
-        console.log("Invalid status");
-}
+// let status = 500;
+// switch (status) {
+//     case 200:
+//         console.log("OK");
+//         break;
+//     case 201:
+//         console.log("Created");
+//         break;
+//     case 400:
+//         console.log("rejected");
+//         break;
+//     case 403:
+//         console.log("Forbidden");
+//         break;
+//     case 401:
+//         console.log("UnAuthorized");
+//         break;
+//     case 500:
+//         console.log("Internal server ERROR");
+//         break;
+//     default:
+//         console.log("Invalid status");
+// }
+
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+// console.log("I love JavaScript");
+
+// let name = "I love JavaScript";
+// for(let i=0; i<5; i++){
+//     console.log({name} + i);
+// }
+// let name = "I love JavaScript";
+// for(let i=0; i<5; i++){
+//     console.log("I love javascript" +i);
+// }
+
+// for(let i=1;i<=10;i++){
+//     console.log(`2 * ${i} = ${2*i}`)
+// }
+
+// console.log("Even numbers");
+// for(let i=1;i<10;i++){
+//     if(i%2 ===0)
+//         console.log(`The even number: ${i}`);
+// }
+
+// console.log("Odd numbers");
+// for(let i=1;i<10;i++){
+//     if(i%2 !== 0)
+//         console.log(`odd number: ${i}`);
+// }
+
+// const arr = [3,4,5,6];
+// let sum = 0;
+// for(let i=0;i<arr.length;i++){
+//     sum += arr[i];
+// }
+// console.log(arr.length)
+// console.log(`the sum of array is: ${sum}`);
+
+
+// while loop
+// let i = 0;
+// while(i<=5){
+//     console.log(`the value of i is: ${i}`);
+//     i++;
+// }
+
+// do while
+// let i= 3;
+// do{
+//     console.log(`the value of i is: ${i}`);
+//     i++;
+//     }while(i<=5);
+
+const arr = [4,5,6,7,8,9];
+console.log(arr);
+console.log(arr[2]);
+
+console.log(typeof arr);
