@@ -909,21 +909,70 @@
 
 // ------------8-11-19-24-34-------------------------------------------------------
 // reduce
-let newArr = [1, 7, 3, 8, 5, 10];
-let output = newArr.reduce((accum, curvalue) => accum+curvalue);
-console.log(output);
-// console.log(typeof output);
+// let newArr = [1, 7, 3, 8, 5, 10];
+// let output = newArr.reduce((accum, curvalue) => accum+curvalue);
+// console.log(output);
+// // console.log(typeof output);
 
-const products = [
-  { id: 1, name: "Bipin", price: 8000, instock: true },
-  { id: 2, name: "Horlicks", price: 9000, instock: false },
-  { id: 3, name: "Bournbita", price: 12000, instock: true },
-  { id: 4, name: "cauli", price: 1230, instock: true },
-  { id: 5, name: "Banana", price: 1256, instock: true },
-];
+// const products = [
+//   { id: 1, name: "Bipin", price: 8000, instock: true },
+//   { id: 2, name: "Horlicks", price: 9000, instock: false },
+//   { id: 3, name: "Bournbita", price: 12000, instock: true },
+//   { id: 4, name: "cauli", price: 1230, instock: true },
+//   { id: 5, name: "Banana", price: 1256, instock: true },
+// ];
 
-let ans = products.reduce((total, curvalue) => total + curvalue.price, 0);
-console.log(ans);
+// let ans = products.reduce((total, curvalue) => total + curvalue.price, 0);
+// console.log(ans);
 // console.log(typeof ans);
 // console.log(products);
 // console.log(typeof products);
+
+// let heading = document.getElementById("heading");
+// let box = document.getElementById("div");
+// let btnClick = document.getElementById("btn");
+
+// btnClick.addEventListener("Click",() =>{
+//   console.log("Clicked")
+// });
+
+// session storage:
+// it will run in the current time...
+// let name = "Bipin";
+// let age = 23;
+// let city = "Kathmandu";
+// let ans = "Hello " + name + " you are " + age + " years old and";
+// sessionStorage.setItem("name", name);
+// sessionStorage.setItem("age", age);
+// sessionStorage.setItem("city", city);
+// console.log(sessionStorage.getItem("name"));
+// console.log(sessionStorage.getItem("age"));
+// console.log(sessionStorage.getItem("city"));
+// console.log(ans);
+
+// let input = document.getElementById("username");
+// let btnAdd = document.getElementById("btnAdd");
+// let btnRemove = document.getElementById("btnRemove");
+// const myFunc = () => {
+//   // alert(input.value);
+//   // sessionStorage.setItem("key1",input)
+//   localStorage.setItem("key1",
+//     .JSON.Stringly
+//   )
+// };
+// btnAdd.addEventListener("click",myFunc);
+// btnRemove.addEventListener("click",() => {
+//   localStorage.removeItem("key1");
+// });
+// // alert(sessionStorage.getItem("key1"));
+
+// if(sessionStorage.getItem("key1")){
+//   alert(sessionStorage.getitem("key1"));
+// }
+
+// if(localStorage.getItem("key1")){
+//   alert(JSON.parse(localStorage.getItem("key1")));
+// }
+
+
+// set time out and set time interval
