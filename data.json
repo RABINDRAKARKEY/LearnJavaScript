@@ -1,0 +1,27 @@
+{
+    "Person": {
+        "name": "Bipin Karki",
+        "age": 23,
+        "isMarried": true
+    },
+    "products": [
+        {
+            "id": 1,
+            "productName": "Football Accessories",
+            "price": 3500,
+            "isAvailable": true
+        },
+        {
+            "id": 2,
+            "productName": "Basketball Accessories",
+            "price": 2803,
+            "isAvailable": true
+        },
+        {
+            "id": 3,
+            "productName": "VolleyBall Accessories",
+            "price": 1050,
+            "isAvailable": true
+        }
+    ]
+}

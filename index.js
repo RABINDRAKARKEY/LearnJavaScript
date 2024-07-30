@@ -909,21 +909,276 @@
 
 // ------------8-11-19-24-34-------------------------------------------------------
 // reduce
-let newArr = [1, 7, 3, 8, 5, 10];
-let output = newArr.reduce((accum, curvalue) => accum+curvalue);
-console.log(output);
-// console.log(typeof output);
+// let newArr = [1, 7, 3, 8, 5, 10];
+// let output = newArr.reduce((accum, curvalue) => accum+curvalue);
+// console.log(output);
+// // console.log(typeof output);
 
-const products = [
-  { id: 1, name: "Bipin", price: 8000, instock: true },
-  { id: 2, name: "Horlicks", price: 9000, instock: false },
-  { id: 3, name: "Bournbita", price: 12000, instock: true },
-  { id: 4, name: "cauli", price: 1230, instock: true },
-  { id: 5, name: "Banana", price: 1256, instock: true },
-];
+// const products = [
+//   { id: 1, name: "Bipin", price: 8000, instock: true },
+//   { id: 2, name: "Horlicks", price: 9000, instock: false },
+//   { id: 3, name: "Bournbita", price: 12000, instock: true },
+//   { id: 4, name: "cauli", price: 1230, instock: true },
+//   { id: 5, name: "Banana", price: 1256, instock: true },
+// ];
 
-let ans = products.reduce((total, curvalue) => total + curvalue.price, 0);
-console.log(ans);
+// let ans = products.reduce((total, curvalue) => total + curvalue.price, 0);
+// console.log(ans);
 // console.log(typeof ans);
 // console.log(products);
 // console.log(typeof products);
+
+// Stack in JavaScript:
+// LIFO ORDER
+
+// |                  |
+// |                  |
+// |                  |
+// |                  |
+// |                  |
+// |                  |
+// |__________________|
+//        STACK
+
+// EC : Execution context
+// GEC : Global ececution context
+// Execution Context
+
+// console.log(j);
+// console.log(i);
+// let a = i;
+// let b = j;
+
+//// var i = 13;
+//// var j = 12;
+//// function sum(a, b) {
+////   var c = a + b;
+////   return c;
+//// }
+//// const result = sum(i, j);
+//// console.log(result);
+
+// {
+// console.log("Hello World");
+
+// function Display() {
+//   for (let i = 0; i < 100; i++) {
+//     console.log(i);
+//   }
+// }
+
+// Display();
+// //// alert("I'm in love with you!!!");
+// console.log("Harey Shiva!");
+// }
+
+// EVENT
+
+// setTimeout(() => {
+//   alert("I'm in love with you!!!");
+// },4000);
+
+// function Sum(a, b) {
+//   const ans = a + b;
+//   cb(ans);
+// }
+// function Display(result) {
+//   const h1 = document.createElement("h1");
+//   h1.innerText = `The sum of a and b is ${result}`;
+//   document.body.append(h1);
+// }
+
+// Sum(4, 9, Display);
+// arr.foreach(() => {
+
+// });
+
+// let arr = [1,2,3,4,5,6,7,8,9];
+
+// function Calculator(arr = []) {
+//   let ans = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     ans.push(arr[i]/10);
+//   }
+//   console.log(ans);
+// }
+
+// Calculator(arr);
+
+// function Calculator(arr = [],cb){
+// const
+// }
+
+// Another one
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// function Calculator(arr = [], cb) {
+//   let ans = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = cb(arr[i]);
+//     ans.push(element);
+//   }
+//   console.log(ans);
+// }
+
+// // const Divide = (a) => {
+// //   return a / 10;
+// // }
+// // const Multiply = (a) => {
+// //   return a * 10;
+// // }
+// // const Addition = (a) => {
+// //   return a + 10;
+// // }
+// // const Substraction = (a) => {
+// //   return a - 10;
+// // }
+
+// Calculator(arr, (a) => a*10);
+// Calculator(arr, (a) => a/10);
+
+// arr.forEach((value,undex)=>{})
+
+//// let products = [];
+//// const AddProduct = () => {
+////   setTimeout(() => {
+////     products.push(
+////       { id: 1, name: "Dr Martin", price: 8000, instock: true },
+////       { id: 2, name: "EN Bipin", price: 8000, instock: true }
+////     );
+//
+////     setTimeout((products) => {
+////       console.log("bfvkf k k")
+////     },1000);
+//
+////     console.log(products);
+////   }, 4000);
+//// };
+//
+//// const DisplayProduct = () => {
+////   setTimeout(() => {
+////     products.forEach((products) => {
+////       const h1 = document.createElement("h1");
+////       h1.innerText = products.name;
+////       document.body.append(h1);
+////     });
+////   }, 1000);
+//// };
+
+// callback hell`/`
+
+// const res = new Promise((resolve, rejected) => {
+//   resolve("Promise Fulfilled");
+//   // rejected("Promise Rejected");
+// });
+// // res.then((param) => console.log(param)).catch((error) => console.log(error));
+// res.then((param) => console.log(param)).catch((error) => console.log(error));
+
+// then   fulfill
+// catch   Promise
+// finally    neutral
+
+// const res = new Promise((resolve, rejected) => {
+//   resolve("Promise Fulfilled");
+// });
+// res.then((param) => console.log(param)).catch(console.log);
+
+// const res = new Promise((resolve, rejected) => {
+//   // resolve("Promise Fulfilled");
+//   let success = false;
+//   if (success) {
+//     resolve("Promise Fulfilled");
+//   } else {
+//     rejected("Promise Rejected");
+//   }
+// });
+// res.then((param) => console.log(param)).catch((error) => console.log(error));
+
+//const fetchData = () => {
+//  // fetch new Promise((resolve, rejected) => {});
+//  fetch(`https://catfact.ninja/fact`)
+//    .then((res) => res.json())
+//    .then((error) => res.json())
+//    .then((data) => {
+//      const h1 = document.createElement("h1");
+//      h1.innerText = data
+//      document.body.append(h1);
+//    })
+//    .catch((error)=>console.log(error));
+//};
+//
+//fetchData();
+//
+//const fetchData = () => {
+//  fetch(`https://catfact.ninja/fact`)
+//    .then((res) => res.json())
+//    .then((data) => {
+//      const h1 = document.createElement("h1");
+//      h1.innerText = data.fact;
+//      document.body.append(h1);
+//    })
+//    .catch((error) => console.log(error));
+//};
+//
+//fetchData();
+//
+
+// const FetchData = async () => {
+//   try {
+//     const res = await fetch(`https://catfact.ninja/fact`);
+//     const data = await res.json();
+//     // const h1 = document.createElement("h1");
+//     // h1.innerText = data.fact;
+//     // document.body.append(h1);
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+//   // const res = await fetch(`https://catfact.ninja/fact`);
+//   // // console.log(res);
+//   // const data = await res.json();
+//   // console.log(data);
+
+//   // const h1 = document.createElement("h1");
+//   // h1.innerText = data.fact;
+//   // document.body.append(h1);
+// };
+
+// FetchData();
+// throw new Error("Invalid input!");
+
+// const FetchData = async () => {
+//   try {
+//     const res = await fetch(`https://catfact.ninja/fact`);
+//     const data = await res.json();
+//     console.log(data);
+
+//     const facts = data.data;
+//     facts.foreach((value, index) => {
+//       const h1 = document.createElement("h1");
+//       h1.innerText = value.fact;
+//       document.body.append(h1);
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// FetchData();
+// throw new Error("Invalid input!");
+
+const fetchData = async () => {
+  try {
+    const res = await fetch(`https://catfact.ninja/fact`);
+    const data = await res.json();
+    console.log(data);
+
+    const h1 = document.createElement("h1");
+    h1.innerText = data.fact;
+    document.body.append(h1);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+fetchData();
+throw new Error("Invalid input!");
